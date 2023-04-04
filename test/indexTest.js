@@ -21,7 +21,7 @@ describe("place-kitty.css", () => {
   });
 
   it("selects the image with a class of kitty-1", () => {
-    const rule = findRule(css.cssRules, ".kitty-1");
+    const rule = findRule(css.cssRules, "img.kitty-1");
     const hint =
       "Make sure you have a CSS selector that selects the image that has a class of kitty-1";
     expect(rule, hint).to.exist;
